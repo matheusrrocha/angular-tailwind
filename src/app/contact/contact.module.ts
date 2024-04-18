@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactFormComponent } from './contact-form/contact-form.component';
-
+import { ToastrModule } from 'ngx-toastr';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -9,7 +11,11 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     ContactFormComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ContactModule { }
