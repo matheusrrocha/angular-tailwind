@@ -5,7 +5,7 @@ import { ContactFormComponent } from './contact/contact-form/contact-form.compon
 
 const routes: Routes = [
   {path: '', redirectTo: 'api', pathMatch: 'full'},
-  {path: 'api', component: ApiListComponent},
+  {path: 'apis', component: ApiListComponent},
   {path: 'contact', component: ContactFormComponent},
 ];
 

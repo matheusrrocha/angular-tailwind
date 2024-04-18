@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ApiModule } from './api/api.module';
 import { ContactModule } from './contact/contact.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -15,8 +16,9 @@ import { ContactModule } from './contact/contact.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    RouterModule,
     ApiModule,
-    ContactModule
+    ContactModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
